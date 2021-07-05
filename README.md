@@ -7,18 +7,18 @@ Monster-in-the-middle native messaging and spy on your favorite browser extensio
 
 1. Clone this repository: `git clone https://github.com/KarimPwnz/nativemessaging-mitm`
 
-2. Open `configs.json` and add the target app manifest path, the name of the target extension, and the app manifest's original script (path property):
+2. Open `configs.json` and add the target app manifest path, the name of the target extension, and the app manifest's original app path:
 
 ```json
 {
     "/Users/example/Library/Application Support/Mozilla/NativeMessagingHosts/example.json": {
         "name": "example",
-        "originalScript": "/Applications/example.app/example"
+        "originalApp": "/Applications/example.app/example"
     }
 }
 ```
 
-3. Change the path in your target's app manfiest to the repository's `mitm.js` script:
+3. Change the app path in your target's app manfiest to the repository's `mitm.js` script:
 
 ```json
 {

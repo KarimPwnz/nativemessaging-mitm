@@ -36,9 +36,9 @@ function extractStreamString(stream) {
     let origin = process.argv[2];
     let extensionConfig = getConfigs()[origin];
     let extensionName = extensionConfig.name;
-    let redirectScript = extensionConfig.originalScript;
+    let originalApp = extensionConfig.originalApp;
     // Spawn redirect script process
-    let p = child_process.spawn(redirectScript);
+    let p = child_process.spawn(originalApp);
     // Start logging
     let i = 0;
     process.stdin.on("readable", () => {
