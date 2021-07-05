@@ -18,7 +18,7 @@ Monster-in-the-middle native messaging and spy on your favorite browser extensio
 }
 ```
 
-3. Change the path in your target app manfiest to the repository's `mitm.js` script:
+3. Change the script path in your target app manfiest to the repository's `mitm.js` script:
 
 ```json
 {
