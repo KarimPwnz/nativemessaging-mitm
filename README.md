@@ -1,7 +1,7 @@
 # nativemessaging-mitm
 Monster-in-the-middle native messaging and spy on your favorite browser extensions.
 
-![Log file example](https://user-images.githubusercontent.com/14217083/124505574-7aeaa200-ddd2-11eb-8281-69c52e8be4e3.png);
+![Log file example](https://user-images.githubusercontent.com/14217083/124505574-7aeaa200-ddd2-11eb-8281-69c52e8be4e3.png)
 
 ## Instructions
 
