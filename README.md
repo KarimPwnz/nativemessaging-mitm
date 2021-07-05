@@ -1,7 +1,7 @@
 # nativemessaging-mitm
 Monster-in-the-middle native messaging and spy on your favorite browser extensions.
 
-![Log file example](https://user-images.githubusercontent.com/14217083/124505574-7aeaa200-ddd2-11eb-8281-69c52e8be4e3.png)
+![Log file example](https://user-images.githubusercontent.com/14217083/124507082-b470dc80-ddd5-11eb-8546-95a5aea52377.png)
 
 ## Instructions
 
@@ -36,10 +36,10 @@ Monster-in-the-middle native messaging and spy on your favorite browser extensio
 ```sh
 $ tail -f /path/to/nativemessaging-mitm/logs/example.log
 
-[1] ← (SERVER): {"hello":"extension"}
+[1] ← (APP): {"hello":"extension"}
 
-[2] → (CLIENT): {"hello":"app"}
+[2] → (EXTENSION): {"hello":"app"}
 
-[3] ← (SERVER): {"okay":"bye"}
+[3] ← (APP): {"okay":"bye"}
 
 ```

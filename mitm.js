@@ -43,12 +43,12 @@ function extractStreamString(stream) {
     let i = 0;
     process.stdin.on("readable", () => {
         let input = extractStreamString(process.stdin);
-        log(extensionName, `[${++i}] → (CLIENT): ${input}\n\n`);
+        log(extensionName, `[${++i}] → (EXTENSION): ${input}\n\n`);
         p.stdin.write(input);
     });
     p.stdout.on("readable", () => {
         let output = extractStreamString(p.stdout);
-        log(extensionName, `[${++i}] ← (SERVER): ${output}\n\n`);
+        log(extensionName, `[${++i}] ← (APP): ${output}\n\n`);
         process.stdout.write(output);
     });
 })();
